@@ -4,9 +4,6 @@
     Make a lower-quality, smaller version of the profile pic.
 */
 
-body {
-}
-
 #pic-of-self {
     width: 100px;
     padding: 25px;
