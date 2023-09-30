@@ -21,11 +21,14 @@
             <h1 id="my-name">Dylan Ruppell</h1>
         </header>
         <nav>
-            <a href="#">Home</a>
-            <a href="chamber/siteplan.html">Site Plan</a>
-            <a href="chamber/">Chamber</a>
-            <a href="https://www.byui.edu">BYU Idaho</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/25?lang=eng&id=p40#p40">Scripture</a>
+            <button id="burger"></button>
+            <ul class="navi">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="chamber/siteplan.html">Site Plan</a></li>
+                <li><a href="chamber/">Chamber</a></li>
+                <li><a href="https://www.byui.edu">BYU Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/25?lang=eng&id=p40#p40">Scripture</a></li>
+            </ul>
         </nav>
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
@@ -39,7 +42,7 @@
                         <a href="lesson02/design.html" target="_blank">Web Design Principles</a> | <a href="lesson02/design-principles.html" target="_blank">Design Document</a>
                     </li>
                     <li>03.
-                        <a></a>
+                        <a href="https://codepen.io/digitalntt-soul/pen/wvRXPyE" target="_blank">Pseudo-element CodePen</a> | <a href="https://codepen.io/digitalntt-soul/pen/ZEVRNvo" target="_blank">Responsive Menu CodePen</a>
                     </li>
                     <li>04.
                         <a></a>
@@ -69,11 +72,13 @@
                 <p>weather placeholder</p>
                 <p>visit counter placeholder</p>
             </section>
+            <iframe id="gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d103303.25749056!2d-83.957107937037!3d35.99032469572123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696034413061!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
         <footer>
             <p id="copyright-string">Dylan Ruppell - Tennessee, United States of America</p>
             <p id="last-modified-date"></p>
         </footer>
         <script src="scripts/getdates.js"></script>
+        <script src="scripts/burger.js"></script>
     </body>
 </html>
