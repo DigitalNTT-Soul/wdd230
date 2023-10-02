@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* 'Playfair Display', 'Permanent Marker', 'Roboto' */
 
+:root {
+    /* text color variables */
+    --heading-text-color: white;
+    --heading-background-color: #ff8200;
+    --body-text-color: #58595b;
+
+    /* fonts */
+    --font-for-h1: "permanent marker";
+    --font-for-other-headings: "Roboto", Helvetica, sans-serif;
+    --font-for-body: "Playfair Display", "Times New Roman", Times, serif;
+}
 
 body {
     margin: 0;
-    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-family: var(--font-for-body);
+    color: var(--body-text-color);
 }
 
 main {
@@ -14,13 +26,14 @@ main {
 
 h1 {
     padding: 1rem;
-    font-family: 'Permanent Marker';
-    color: white;
-    background-color: #ff8200;
+    font-family: var(--font-for-h1);
+    color: var(--heading-text-color);
+    background-color: var(--heading-background-color);
+    letter-spacing: .25rem;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: var(--font-for-other-headings);
 }
 
 #color-schema-section {
@@ -44,15 +57,15 @@ h2, h3, h4, h5, h6 {
 
 #background-card {
     /* UT Orange */
-    background-color: #ff8200;
+    background-color: var(--heading-background-color);
 }
 
 #heading-card {
-    background-color: white;
+    background-color: var(--heading-text-color);
 }
 
 #body-card {
-    background-color: #58595b;
+    background-color: var(--body-text-color);
 }
 
 
