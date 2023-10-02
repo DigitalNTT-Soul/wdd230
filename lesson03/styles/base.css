@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* 'Playfair Display', 'Permanent Marker', 'Roboto' */
+
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;;
+}
+
+h1 {
+    padding: 1rem;
+    font-family: 'Permanent Marker';
+    color: white;
+    background-color: #ff8200;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+#color-schema-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.color-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin: 1rem;
+}
+
+#background-card, #heading-card, #body-card {
+    display: block;
+    height: 100px;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+#background-card {
+    /* UT Orange */
+    background-color: #ff8200;
+}
+
+#heading-card {
+    background-color: white;
+}
+
+#body-card {
+    background-color: #58595b;
+}
+
+
+    
