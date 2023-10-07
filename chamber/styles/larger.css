@@ -1,0 +1,22 @@
+@media screen and (min-width: 901px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #cta-join-chamber {
+        grid-column: 1/4;
+    }
+
+    .current-events {
+        grid-column: 1/3;
+    }
+
+    .weather-card {
+        grid-column: 3/4;
+    }
+
+    .spotlight-ads {
+        grid-column: 1/4;
+    }
+}

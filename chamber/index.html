@@ -6,6 +6,7 @@
         <title>Knoxville Chamber of Commerce</title>
         <meta name="description" content="Home Page of the Knoxville Chamber of Commerce">
         <meta name="author" content="Dylan Ruppell">
+        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
@@ -17,21 +18,58 @@
     </head>
     <body>
         <header>
-
+            
         </header>
         <nav>
-
+            <button id="burger"></button>
+            <ul class="navi">
+                <li><a href="#" target="_blank" class="current-page">Home</a></li>
+                <li><a href="#" target="_blank">Discover Knoxville</a></li>
+                <li><a href="#" target="_blank">Member Directory</a></li>
+                <li><a href="#" target="_blank">Join Us</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+            </ul>
         </nav>
         <main>
-
+            <img alt="hero image" src="#" id="hero-image">
+            <a href="#" target="_blank" id="cta-join-chamber">Join the Chamber Now!</a>
+            <section class="current-events">
+                <h1>Current Events</h1>
+                <a href="#" target="_blank" class="linked-card"><div class="card">
+                    <h2>PLACEHOLDER event</h2>
+                    <img alt="event image" src="#">
+                    <p>PLACEHOLDER textual description for the event</p>
+                </div></a>
+            </section>
+            <section class="weather">
+                <h1>Local Weather</h1>
+                <div class="card">
+                    <h2>PLACEHOLDER: Weather Data goes here.</h2>
+                </div>
+            </section>
+            <section class="spotlight-ads">
+                <h1 id="local-spotlight-header">Local Spotlight</h1>
+                <a href="#" target="_blank" class="linked-card"><div class="card">
+                    <h2>PLACEHOLDER ad headline</h2>
+                    <img alt="ad image" src="#">
+                    <p>PLACEHOLDER body text of ad</p>
+                </div></a>
+                <a href="#" target="_blank" class="linked-card"><div class="card">
+                    <h2>PLACEHOLDER ad headline</h2>
+                    <img alt="ad image" src="#">
+                    <p>PLACEHOLDER body text of ad</p>
+                </div></a>
+            </section>
         </main>
         <footer>
-
+            <p id="copyright-string">Dylan Ruppell (author) - ruppelld@byui.edu</p>
+            <p>Fictional Project for WDD 230 college course. Not affiliated with the official Chamber of Commerce for the city of Knoxville, Tennessee</p>
+            <p id="last-modified-date"></p>
         </footer>
-        <script src="FILLME"></script>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/burger.js"></script>
     </body>
 </html>
-
 
 <!--
     TODO LIST:
