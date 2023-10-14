@@ -4,7 +4,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     
-    #cta-join-chamber {
+    #cta-join-chamber, .spotlight-ads, #hero-image{
         grid-column: 1/4;
     }
 
@@ -14,9 +14,5 @@
 
     .weather-card {
         grid-column: 3/4;
-    }
-
-    .spotlight-ads {
-        grid-column: 1/4;
     }
 }

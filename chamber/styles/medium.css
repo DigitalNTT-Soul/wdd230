@@ -1,14 +1,10 @@
 @media screen and (min-width: 601px) {
-    nav, footer {
-        width: 80%;
-    }
-
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    #cta-join-chamber, .spotlight-ads {
+    #cta-join-chamber, .spotlight-ads, #hero-image{
         grid-column: 1/3;
     }
 
@@ -33,4 +29,7 @@
         display: block;
     }
 
+    nav, footer {
+        width: 80%;
+    }
 }

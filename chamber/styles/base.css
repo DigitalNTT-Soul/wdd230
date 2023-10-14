@@ -1,25 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* 'Playfair Display', 'Permanent Marker', 'Roboto' */
+@import url('https://fonts.googleapis.com/css2?&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* 'Playfair Display', 'Roboto' */
 
 :root {
     /* text color variables */
-    --heading-text-color: white;
-    --heading-background-color: #ff8200;
+    --main-background-color: #ff8200;
+    --cta-button-default-color: #ff6200;
+    --panel-background-color: #ffffff;
     --body-text-color: #58595b;
 
     /* fonts */
-    --font-for-h1: "permanent marker";
-    --font-for-other-headings: "Roboto", Helvetica, sans-serif;
+    --font-for-headings: "Roboto", Helvetica, sans-serif;
     --font-for-body: "Playfair Display", "Times New Roman", Times, serif;
 }
 
 body {
     font-family: var(--font-for-body);
     color: var(--body-text-color);
+    background-color: var(--main-background-color);
 }
 
 #hero-image {
-    background-color: var(--heading-background-color);
+    background-color: var(--panel-background-color);
     color: var(--heading-text-color);
     padding: 1rem;
 }
@@ -34,21 +35,32 @@ main {
     padding: 1rem;
 }
 
-h1 {
+h1, h2 {
     padding: 1rem;
-    font-family: var(--font-for-h1);
-    color: var(--heading-text-color);
-    background-color: var(--heading-background-color);
-    letter-spacing: .25rem;
+    background-color: var(--panel-background-color);
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: var(--font-for-other-headings);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-for-headings);
 }
 
-header {
+/* header {
     display: flex;
     width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+h1 {
+    align-self: center;
+}
+*/
+
+header {
+    width: 50%;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -61,39 +73,44 @@ nav {
 }
 
 nav a {
-    color: var(--heading-text-color);
+    color: var(--panel-background-color);
     padding: 1em;
     text-decoration: none;
     font-weight: 700;
 }
 
 nav a:hover {
-    background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
+    background-color: var(--main-background-color);
+    color: var(--panel-background-color);
 }
 
 nav a:active,
 .current-page{
-    background-color: var(--heading-text-color);
-    color: var(--heading-background-color);
+    background-color: var(--panel-background-color);
+    color: var(--main-background-color);
 }
 
 #cta-join-chamber {
     text-align: center;
     margin: 0 auto;
     width: fit-content;
-    background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
+    background-color: var(--cta-button-default-color);
+    color: var(--panel-background-color);
     padding: 1rem;
     border-radius: 15px;
     grid-column: 1/2;
+    text-decoration: none;
+}
+
+#cta-join-chamber:hover {
+    background-color: var(--main-background-color);
 }
 
 .card {
     border: 5px solid black;
     padding: 1rem;
     border-radius: 15px;
-    background-color: var(--heading-text-color);
+    background-color: var(--panel-background-color);
 }
 
 .linked-card {
@@ -102,7 +119,7 @@ nav a:active,
 }
 
 .linked-card .card:hover {
-    border: 5px solid var(--heading-background-color);
+    border: 5px solid var(--main-background-color);
 }
 
 .spotlight-ads {
@@ -155,8 +172,7 @@ nav a:active,
 
 footer {
     margin: 1rem auto;
-    background-color: var(--body-text-color);
+    background-color: var(--panel-background-color);
     padding: 1rem;
     text-align: center;
-    color: var(--heading-text-color);
 }
