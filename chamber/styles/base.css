@@ -41,6 +41,8 @@ body {
     background-color: var(--panel-background-color);
     color: var(--heading-text-color);
     padding: 1rem;
+    width: 95%;
+    margin: 0 auto;
 }
 
 main {
@@ -63,9 +65,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    width: 50%;
+    width: 75%;
     text-align: center;
     margin: 0 auto;
+}
+
+.logo-label {
+    display: flex;
+    background-color: var(--panel-background-color);
+    align-items: center;
+    margin: 1rem;
 }
 
 nav {
