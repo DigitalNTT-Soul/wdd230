@@ -2,11 +2,29 @@
 /* 'Playfair Display', 'Roboto' */
 
 :root {
-    /* text color variables */
+    /* color variables */
+    /* need a TON more variables to accommodate dark mode properly */
     --main-background-color: #ff8200;
-    --cta-button-default-color: #ff6200;
-    --panel-background-color: #ffffff;
+    --secondary-background-color: #58595b;
     --body-text-color: #58595b;
+    --panel-background-color: #ffffff;
+
+    --cta-button-text-color: #ffffff;
+    --cta-button-default-color: #ff8200;
+    --cta-button-onhover-color: #ff6200;
+
+    --nav-text-default-color: #ffffff;
+    --nav-text-onhover-color: #ffffff;
+    --nav-background-default-color: #58595b;
+    --nav-background-onhover-color: #ff8200;
+    
+    --nav-current-page-text-default-color: #ff8200;
+    --nav-current-page-text-onhover-color: #ffffff;
+    --nav-current-page-background-default-color: #ffffff;
+    --nav-current-page-background-onhover-color: #ff8200;
+
+    --linked-card-default-border-color: #000000;
+    --linked-card-onhover-border-color: #ff8200;    
 
     /* fonts */
     --font-for-headings: "Roboto", Helvetica, sans-serif;
@@ -31,7 +49,7 @@ main {
     display: grid;
     grid-template: 1fr / auto;
     gap: 1rem;
-    background-color: var(--body-text-color);
+    background-color: var(--secondary-background-color);
     padding: 1rem;
 }
 
@@ -44,20 +62,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-for-headings);
 }
 
-/* header {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    align-self: center;
-    align-content: center;
-}
-
-h1 {
-    align-self: center;
-}
-*/
-
 header {
     width: 50%;
     text-align: center;
@@ -67,27 +71,27 @@ header {
 nav {
     grid-template: 100% / auto;
     margin: 1rem auto;
-    background-color: var(--body-text-color);
+    background-color: var(--nav-background-default-color);
     padding: 1em;
     text-align: center;
 }
 
 nav a {
-    color: var(--panel-background-color);
+    color: var(--nav-text-default-color);
     padding: 1em;
     text-decoration: none;
     font-weight: 700;
 }
 
 nav a:hover {
-    background-color: var(--main-background-color);
-    color: var(--panel-background-color);
+    background-color: var(--nav-background-onhover-color);
+    color: var(--nav-text-onhover-color);
 }
 
 nav a:active,
 .current-page{
-    background-color: var(--panel-background-color);
-    color: var(--main-background-color);
+    background-color: var(--nav-current-page-background-default-color);
+    color: var(--nav-current-page-text-default-color);
 }
 
 #cta-join-chamber {
@@ -95,7 +99,7 @@ nav a:active,
     margin: 0 auto;
     width: fit-content;
     background-color: var(--cta-button-default-color);
-    color: var(--panel-background-color);
+    color: var(--cta-button-text-color);
     padding: 1rem;
     border-radius: 15px;
     grid-column: 1/2;
@@ -103,7 +107,7 @@ nav a:active,
 }
 
 #cta-join-chamber:hover {
-    background-color: var(--main-background-color);
+    background-color: var(--cta-button-onhover-color);
 }
 
 .card {
@@ -119,7 +123,7 @@ nav a:active,
 }
 
 .linked-card .card:hover {
-    border: 5px solid var(--main-background-color);
+    border: 5px solid var(--linked-card-onhover-border-color);
 }
 
 .spotlight-ads {
@@ -175,4 +179,63 @@ footer {
     background-color: var(--panel-background-color);
     padding: 1rem;
     text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
 }
