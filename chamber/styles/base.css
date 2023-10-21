@@ -4,7 +4,7 @@
 :root {
     /* color variables */
     /* need a TON more variables to accommodate dark mode properly */
-    --main-background-color: #ff8200;
+    --main-background-color: #ffffff;
     --secondary-background-color: #58595b;
     --body-text-color: #58595b;
     --panel-background-color: #ffffff;
@@ -23,6 +23,8 @@
     --nav-current-page-background-default-color: #ffffff;
     --nav-current-page-background-onhover-color: #ff8200;
 
+    --hero-background-color: #ffffff;
+
     --linked-card-default-border-color: #000000;
     --linked-card-onhover-border-color: #ff8200;    
 
@@ -37,11 +39,16 @@ body {
     background-color: var(--main-background-color);
 }
 
-#hero-image {
+.hero {
+    align-content: center;
+}
+
+.hero img {
     background-color: var(--panel-background-color);
-    color: var(--heading-text-color);
+    color: var(--heading-text-color); /* only applies to alt text, as far as I can tell */
     padding: 1rem;
     width: 66%;
+    /* height: auto; */
     margin: 0 auto;
 }
 

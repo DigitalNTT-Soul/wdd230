@@ -4,7 +4,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    #cta-join-chamber, .spotlight-ads, #hero-image{
+    #cta-join-chamber, .spotlight-ads, .hero {
         grid-column: 1/3;
     }
 

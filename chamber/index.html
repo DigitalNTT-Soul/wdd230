@@ -19,7 +19,7 @@
     <body>
         <header>
             <div class="logo-label">
-                <img src="images/android-chrome-192x192.png" alt="logo of the Knoxville Chamber of Commerce">
+                <img src="images/android-chrome-192x192.webp" alt="logo of the Knoxville Chamber of Commerce">
                 <h1>Knoxville, Tennessee Chamber of Commerce</h1>     
             </div>
             <label class="switch">
@@ -38,7 +38,18 @@
             </ul>
         </nav>
         <main>
-            <img alt="Photo of Knoxville Convention Center and Sunsphere, taken by Frank Kehren. Licensed under cc-by-nc-nd 2.0" src="images/hero-image-by-frank-kehren-license-cc-by-nc-nd-2.0.jpg" id="hero-image">
+            <!-- <img alt="Photo of Knoxville Convention Center and Sunsphere, taken by Frank Kehren. Licensed under cc-by-nc-nd 2.0" src="images/hero-image-by-frank-kehren-license-cc-by-nc-nd-2.0.webp" id="hero-image"> -->
+            <div class="hero">
+                <picture>
+                    <source srcset="images/wdd230-org-large.webp"  media="(min-width: 901px)">
+                    <source srcset="images/wdd230-org-medium.webp" media="(min-width: 601px)">
+                    <source srcset="images/wdd230-org-small.webp"  media="(max-width: 600px)">
+                    
+                    <img alt="this week's provided hero image" src="images/wdd230-org-original.jpg">
+                </picture>
+            </div>
+            
+
             <a href="#" target="_blank" id="cta-join-chamber"><b>Join the Chamber Now!</b></a>
             <section class="current-events">
                 <h2>Current Events</h2>
@@ -51,7 +62,9 @@
             <section class="weather">
                 <h2>Local Weather</h2>
                 <div class="card">
-                    <h3>PLACEHOLDER: Weather Data goes here.</h3>
+                    <p>Temperature: <span id="local-temp">49</span>°F</p>
+                    <p>Wind Speed: <span id="wind-speed">4.1</span>mph</p>
+                    <p>Wind Chill: <span id="wind-chill"></span></p>
                 </div>
             </section>
             <section class="spotlight-ads">
@@ -79,6 +92,7 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/burger.js"></script>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
     </body>
 </html>
 
