@@ -39,16 +39,13 @@ body {
     background-color: var(--main-background-color);
 }
 
-.hero {
-    align-content: center;
-}
-
 .hero img {
+    display: block;
     background-color: var(--panel-background-color);
     color: var(--heading-text-color); /* only applies to alt text, as far as I can tell */
     padding: 1rem;
     width: 66%;
-    /* height: auto; */
+    height: auto;
     margin: 0 auto;
 }
 
