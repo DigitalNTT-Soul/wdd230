@@ -6,6 +6,7 @@
 
 #pic-of-self {
     width: 100px;
+    height: auto;
     padding: 25px;
 }
 
@@ -38,11 +39,39 @@ nav a:hover {
     font-weight: 700;
 }
 
+
 main {
     width: 75%;
     margin: 0 auto;
     display: grid;
     grid-template: 1fr / auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 1px solid rgba(0,0,0,.75);
+    background-color: rgba(0,0,0,.50);
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    font-size: 1.5rem;
+}
+
+.hero-label p {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 700;
+    color: white;
 }
 
 main h2 {
