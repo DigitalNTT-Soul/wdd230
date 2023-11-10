@@ -1,0 +1,28 @@
+{
+    "familyName" : "Cox",
+    "moveInDate" : "Jan-1-2020",
+    "numberOfFamilyMembers" : 4,
+    "visitedByBishopric" : true,
+    "familyMembers" : [
+        {
+            "name" : "Kevin",
+            "gender" : "male",
+            "birthdate" : "Oct-13-1982"
+        },
+        {
+            "name" : "Brandi",
+            "gender" : "female",
+            "birthdate" : "Aug-2-1977"
+        },
+        {
+            "name" : "Sophia",
+            "gender" : "female",
+            "birthdate" : "Jul-27-2008"
+        },
+        {
+            "name" : "Dylan",
+            "gender" : "male",
+            "birthdate" : "Jul-10-1999"
+        }
+    ]
+}
