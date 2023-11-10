@@ -1,0 +1,46 @@
+:root {
+    --table-border-color: 				#000000;
+	--table-shadow-color: 			    #ffff00;
+
+	--caption-text-color: 				#000000;
+	
+    --table-header-background-color: 	#000000;
+	--table-header-text-color:			#ffff00;
+	
+    --zebra-stripe-background-color: 	#ffff99;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--table-border-color);
+    box-shadow: 0 0 10px var(--table-shadow-color);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--caption-text-color);
+    font-size: .85rem;
+}
+
+tr:first-child th {
+    background-color: var(--table-header-background-color);
+    color: var(--table-header-text-color);
+}
+
+th, td {
+    padding: 7px 15px;
+}
+
+th {
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra-stripe-background-color);
+}

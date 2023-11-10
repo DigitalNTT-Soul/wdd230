@@ -85,7 +85,12 @@
         },
         {
             "lesson" : "08",
-            "links" : []
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "HTML Tables"
+                }
+            ]
         },
         {
             "lesson" : "09",
