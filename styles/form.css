@@ -1,0 +1,29 @@
+:root {
+    --text-field-background-color: rgba(0,0,0,0.1);
+    --text-field-text-color: #555;
+    --text-field-border-color: #999;
+    --label-color: black;
+}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--label-color);
+    font-size: .8rem;
+}
+
+form label input.textInput {
+    appearance: none;
+    border: solid 1px var(--text-field-border-color);
+    border-radius: 4px;
+    color: var(--text-field-text-color);
+    background-color: var(--text-field-background-color);
+}
+
+form label input {
+    font-size: 1rem;
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+}

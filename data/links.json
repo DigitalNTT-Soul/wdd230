@@ -89,6 +89,14 @@
                 {
                     "url" : "lesson08/tablebuild.html",
                     "title" : "HTML Tables"
+                },
+                {
+                    "url" : "lesson08/form-start/index.html",
+                    "title" : "HTML Forms"
+                },
+                {
+                    "url" : "./form.html",
+                    "title" : "Form Build"
                 }
             ]
         },
