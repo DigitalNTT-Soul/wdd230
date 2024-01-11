@@ -1,0 +1,80 @@
+#pic-of-self {
+    width: 100px;
+    height: auto;
+    padding: 25pxx;
+}
+
+#my-name {
+    padding: 25px;
+}
+
+header {
+    display:flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+nav {
+    grid-template: 100% / auto;
+    background-color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 1fr / auto;
+}
+main h2 {
+    text-align: center;
+}
+
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px outset navy;
+}
+
+.card h3 {
+    color: white;
+    background-color: darkslateblue;
+    text-align: center;
+    padding: 1em;
+}
+
+.navi li a {
+    display: block;
+    /* padding: 1rem; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+}
+
+.active {
+    background-color: #444;
+}
+
+ul {
+    padding-inline-start: 0;
+    display: grid;
+    list-style: none;
+}
+
+footer {
+    width: 75%;
+    margin: 0 auto;
+}
