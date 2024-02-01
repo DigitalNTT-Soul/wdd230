@@ -1,7 +1,7 @@
 #pic-of-self {
     width: 100px;
     height: auto;
-    padding: 25pxx;
+    padding: 25px;
 }
 
 #my-name {
@@ -40,6 +40,7 @@ main {
     display: grid;
     grid-template: 1fr / auto;
 }
+
 main h2 {
     text-align: center;
 }
@@ -57,11 +58,13 @@ main h2 {
     padding: 1em;
 }
 
+.navi {
+    display: flex;
+    flex-direction: column;
+}
+
 .navi li a {
     display: block;
-    /* padding: 1rem; */
-    /* text-align: center; */
-    /* text-decoration: none; */
 }
 
 .active {
