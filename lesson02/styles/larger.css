@@ -1,6 +1,5 @@
 @media screen and (min-width: 901px) {
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
